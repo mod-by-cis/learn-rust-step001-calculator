@@ -1,31 +1,3 @@
-# `https://github.com/mod-by-cis/learn-rust-step001-calculator`
-
-## komendy
-
-- `cargo run --bin`
-- `cargo check`
-- `cargo fmt`
-- `cargo clippy`
-- `cargo tree`
-- `cargo update`
-- `deno task build-ui` // `deno bundle --platform browser --output source/gui/build/bundle.js source/gui/logic/main.ts && deno eval \"Deno.copyFileSync('source/gui/logic/index.html', 'source/gui/build/index.html')\"`
-- `cargo run --bin calc-gui`
-- `cargo run --bin calc-hybrid`
-- `cargo build --release`
-- `./.cmd/release-backup.ps1`
-- `./.cmd/files-tree.ps1`
-- `code .`
-- `cargo clean`
-- `deno run -A npm:@tauri-apps/cli@2.9.1`
-- `deno run -A npm:@tauri-apps/cli@2.9.1 android init`
-- `deno run -A npm:@tauri-apps/cli@2.9.1 android dev`
-- `deno run -A npm:@tauri-apps/cli@2.9.1 android build`
-
----
-
-`./deno.jsonc`
-
-```jsonc
 {
   "tasks": {
     // --- BUDOWANIE FRONTENDU ---
@@ -61,4 +33,3 @@
     "jsxFragmentFactory": "Fragment"
   }
 }
-```
