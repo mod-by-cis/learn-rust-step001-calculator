@@ -1,1 +1,1 @@
-# learn-rust-step001-calculator
+# Main 1 - Etap początkowy
