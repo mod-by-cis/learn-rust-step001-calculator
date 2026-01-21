@@ -417,7 +417,7 @@ function U(t, _) {
   return typeof _ == "function" ? _(t) : _;
 }
 
-// ../../../../../AppData/Local/deno/npm/registry.npmjs.org/@tauri-apps/api/2.9.1/external/tslib/tslib.es6.js
+// ../../../../AppData/Local/deno/npm/registry.npmjs.org/@tauri-apps/api/2.9.1/external/tslib/tslib.es6.js
 function __classPrivateFieldGet(receiver, state, kind, f) {
   if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
   if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
@@ -430,7 +430,7 @@ function __classPrivateFieldSet(receiver, state, value, kind, f) {
   return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
 }
 
-// ../../../../../AppData/Local/deno/npm/registry.npmjs.org/@tauri-apps/api/2.9.1/core.js
+// ../../../../AppData/Local/deno/npm/registry.npmjs.org/@tauri-apps/api/2.9.1/core.js
 var _Channel_onmessage;
 var _Channel_nextMessageIndex;
 var _Channel_pendingMessages;

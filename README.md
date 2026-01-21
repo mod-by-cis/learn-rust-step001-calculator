@@ -13,14 +13,20 @@
 - `cargo run --bin lekcja003-kalkulator-cli`
 - `cargo run --bin lekcja003-kalkulator-gui`
 - `cargo build --release`
-- `./.cmd/release-backup.ps1 -ProjectRoot .`
+- `./.cmd/release-backup.ps1`
 - `./.cmd/files-tree.ps1`
+- `cargo tauri android init`
+- `cargo tauri android dev`
+- `cargo tauri android build --apk true --aab true --split-per-abi true`
+- `cargo tauri android build --apk true --aab true`
+- `Get-ChildItem -Path "src-tauri/gen/android/app/build/outputs" -Recurse -Include *.apk, *.aab | Select-Object FullName`
 - `code .`
 - `cargo clean`
-- `deno run -A npm:@tauri-apps/cli@2.9.1`
-- `deno run -A npm:@tauri-apps/cli@2.9.1 android init`
-- `deno run -A npm:@tauri-apps/cli@2.9.1 android dev`
-- `deno run -A npm:@tauri-apps/cli@2.9.1 android build`
+- `$env:ANDROID_HOME`
+- `$env:NDK_HOME`
+- `$env:ANDROID_SDK_ROOT`
+- `adb --version`
+- `cargo tauri info`
 
 ---
 
