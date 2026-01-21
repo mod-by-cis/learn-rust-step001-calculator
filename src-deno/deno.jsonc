@@ -1,0 +1,20 @@
+{
+  "imports": {
+    "preact": "https://esm.sh/preact@10.28.2",
+    "preact/hooks": "https://esm.sh/preact@10.28.2/hooks",
+    "@tauri-apps/api/core": "npm:@tauri-apps/api@2.9.1/core"
+  },
+  "compilerOptions": {
+    "jsx": "react",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment"
+  },
+  "tasks": { 
+    // --- BUDOWANIE INTERFEJSU GRAFICZNEGO (FRONTENDU) ---
+    // Używamy jawnych ścieżek ./ i uproszczonego kopiowania// Używamy Twojej sprawdzonej składni z flagą --output
+    "gui:clean": "deno eval \"try { Deno.removeSync('dist', { recursive: true }); } catch (e) {} Deno.mkdirSync('dist', { recursive: true });\"",
+    "gui:bundle": "deno bundle --platform browser --output dist/bundle.js src/main.ts",
+    "gui:copy": "deno eval \"Deno.copyFileSync('index.html', 'dist/index.html')\"",
+    "build-gui": "deno task gui:clean && deno task gui:bundle && deno task gui:copy"
+  }
+}

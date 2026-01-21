@@ -1,0 +1,9 @@
+# ./src-tauri/permissions/calculate.toml
+
+[[permission]]
+identifier = "allow-calculate-commands"
+description = "Pozwala na użycie komend obliczeniowych i inicjalizacyjnych"
+commands.allow = [
+    "calculate_command",
+    "get_initial_value"
+]

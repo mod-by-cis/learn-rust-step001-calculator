@@ -1,0 +1,13 @@
+# ./capabilities/default.toml
+
+"$schema" = "https://schema.tauri.app/capabilities/default.json"
+identifier = "default"
+description = "Uprawnienia dla silnika Arboretum"
+windows = ["main"] 
+
+permissions = [
+  "core:default",
+  "log:default",     
+  "opener:default",
+  "allow-calculate-commands"
+]

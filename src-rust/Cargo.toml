@@ -1,0 +1,23 @@
+[package]
+name = "lekcja003-kalkulator-cli"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.92.0"
+description = "A Tauri Cli-App"
+authors = ["Cisowski Jan Roman"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# The `_lib` suffix may seem redundant but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
+name = "lekcja003_kalkulator_cli_lib" 
+path = "src/lib.rs"
+
+[[bin]]
+name = "lekcja003-kalkulator-cli" # Nazwa binarki zgadza się z nazwą paczki
+path = "src/bin/cli1.rs"
+
+[dependencies]
+crossterm = "0.29.0"
